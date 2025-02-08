@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 function Dashboard() {
   const [city, setCity] = useState('');
   const [weather, setWeather] = useState(null);
 
   const handleSearch = async () => {
-    // Lógica para buscar el clima (la implementaremos más adelante).
+    try {
+      const response = await axios.get(`http://localhost:5000/api/weather?city=${city}`);
+      setWeather(response.data);
+    } catch (error) {
+      console.error('Error al buscar el clima:', error);
+    }
   };
 
   return (
