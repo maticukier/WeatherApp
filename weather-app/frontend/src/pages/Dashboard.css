@@ -1,0 +1,88 @@
+/* Estilos generales */
+.dashboard {
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Fondo de la página */
+}
+
+/* Estilos para el input y el botón */
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+  transition-delay:  0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la card del clima */
+.weather-info {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo predeterminado de la card */
+  transition: background-color 0.5s ease;
+}
+
+.weather-info h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.weather-info img {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-info p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+/* Estilos dinámicos para la card según el clima */
+.clear {
+  background-color: #87CEEB; /* Cielo despejado */
+  color: #000;
+}
+
+.rain {
+  background-color: #808080; /* Lluvia */
+  color: #FFF;
+}
+
+.clouds {
+  background-color: #D3D3D3; /* Nublado */
+  color: #000;
+}
+
+.sun {
+  background-color: #FFA500; /* Sol */
+  color: #000;
+}
+
+.default {
+  background-color: rgba(255, 255, 255, 0.8); /* Por defecto */
+  color: #000;
+}
