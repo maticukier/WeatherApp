@@ -57,6 +57,8 @@ function Dashboard() {
           <p>Temperatura: {weather.main.temp}°C</p>
           <p>Humedad: {weather.main.humidity}%</p>
           <p>Condición: {weather.weather[0].description}</p>
+          <p>Sensacion termica: {weather.weather[0].f}</p>
+
         </div>
       )}
     </div>
